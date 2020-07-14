@@ -5,6 +5,9 @@ Numerical input software keyboard component for Vuetify
 * Vue 2.6.11
 * Vuetify 2.2.11
 
+# Screen shot
+![画面](https://github.com/Tomson-Sakata/SoftwareNumKeyboardForVuetify/blob/images/screenshot_1.jpg)
+
 # Usage
 1.copy src/components/SoftwareNumKeyboard.vue to your project.
 
