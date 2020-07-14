@@ -1,19 +1,50 @@
-# software_num_keyboard
+# SoftwareNumKeyboardForVuetify
+Numerical input software keyboard component for Vuetify
 
-## Project setup
-```
-npm install
-```
+# Requirement
+* Vue 2.6.11
+* Vuetify 2.2.11
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Usage
+1.copy src/components/SoftwareNumKeyboard.vue to your project.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+2.Embedded in the components of your project.
+    
+    <template>
+        <v-container>
+            <v-row>
+                <v-col>
+                    <TextFieldEx v-model="value1" />
+                </v-col>
+                <v-col>
+                    <TextFieldEx v-model="value2" hint="Click to show keyboard" persistent-hint />
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col>
+                    <TextFieldEx v-model="value3" prefix="prefix" />
+                </v-col>
+                <v-col>
+                    <TextFieldEx v-model="value4" hide-details dense suffix="%" />
+                </v-col>
+            </v-row>
+        </v-container>
+    </template>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    <script>
+        import TextFieldEx from '@/components/SoftwareNumKeyboard'
+        export default {
+            name: 'HelloWorld',
+            components: {
+                TextFieldEx
+            },
+            data: function () {
+                return {
+                    value1: "0",
+                    value2: "1",
+                    value3: "2",
+                    value4: "3",
+                }
+            }
+        }
+    </script>
